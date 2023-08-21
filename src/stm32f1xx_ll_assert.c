@@ -12,7 +12,7 @@
 #include "stm32f1xx_hal_def.h"
 #include "stm32f1xx_ll_assert.h"
 
-
+#ifdef USE_FULL_ASSERT
 /*!*****************************************************************************
  * @brief
  * Assertion failure
@@ -35,3 +35,4 @@ __weak void LL_Assert_Failed(const char* pszFile, uint32_t ulLine)
   /* Debugger breakpoint                                  */
   __BKPT();
 }
+#endif /* USE_FULL_ASSERT */
