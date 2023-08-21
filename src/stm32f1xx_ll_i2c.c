@@ -18,14 +18,10 @@
 #if defined(USE_FULL_LL_DRIVER)
 
 /* Includes ------------------------------------------------------------------*/
+#include "stm32f1xx_ll_assert.h"
 #include "stm32f1xx_ll_i2c.h"
 #include "stm32f1xx_ll_bus.h"
 #include "stm32f1xx_ll_rcc.h"
-#ifdef  USE_FULL_ASSERT
-#include "stm32_assert.h"
-#else
-#define assert_param(expr) ((void)0U)
-#endif
 
 /** @addtogroup STM32F1xx_LL_Driver
   * @{

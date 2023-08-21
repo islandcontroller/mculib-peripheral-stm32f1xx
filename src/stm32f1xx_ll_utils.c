@@ -17,14 +17,10 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
+#include "stm32f1xx_ll_assert.h"
 #include "stm32f1xx_ll_rcc.h"
 #include "stm32f1xx_ll_utils.h"
 #include "stm32f1xx_ll_system.h"
-#ifdef  USE_FULL_ASSERT
-#include "stm32_assert.h"
-#else
-#define assert_param(expr) ((void)0U)
-#endif
 
 /** @addtogroup STM32F1xx_LL_Driver
   * @{
